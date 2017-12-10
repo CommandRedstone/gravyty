@@ -9,5 +9,5 @@ execute at @s[tag=size50] run summon falling_block ~ ~ ~ {NoGravity:1,Time:1,Tag
 execute at @s[tag=size100] run summon falling_block ~ ~ ~ {NoGravity:1,Time:1,Tags:[new,size100],Glowing:1,BlockState:{Name:"stone",Properties:{state:"6"}}}
 execute at @s[tag=size500] run summon falling_block ~ ~ ~ {NoGravity:1,Time:1,Tags:[new,size500],Glowing:1,BlockState:{Name:"stone",Properties:{state:"7"}}}
 
-kill @s
 execute as @e[type=falling_block,tag=new] at @s run function gravity_sim:setscore
+kill @s
