@@ -1,4 +1,4 @@
-execute as @e[type=armor_stand] run function gravity_sim:attracttome
+execute as @e[type=armor_stand] at @s run function gravity_sim:attracttome
 
 replaceitem entity @a hotbar.0 minecraft:armor_stand{EntityTag:{Tags:[new,size1],Invisible:1,Marker:1,ArmorItems:[{},{},{},{id:"minecraft:red_wool",Count:1}]},display:{LocName:"Spawn Body Mass 1",Lore:["Einstein's going to be mad!"]}} 1
 replaceitem entity @a hotbar.1 minecraft:armor_stand{EntityTag:{Tags:[new,size2],Invisible:1,Marker:1,ArmorItems:[{},{},{},{id:"minecraft:orange_wool",Count:1}]},display:{LocName:"Spawn Body Mass 2",Lore:["Einstein's going to be mad!"]}} 1
