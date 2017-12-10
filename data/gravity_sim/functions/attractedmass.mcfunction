@@ -1,9 +1,4 @@
-execute store result score @s xrelative run data get entity @s Pos[0]
-execute store result score @s yrelative run data get entity @s Pos[1]
-execute store result score @s zrelative run data get entity @s Pos[2]
+scoreboard players operation @s calculation = @e[type=armor_stand,tag=thisone] mass
+scoreboard players operation @s calculation /= @s mass
 
-scoreboard players operation @s xrelative -= @e[type=armor_stand,tag=thisone] x
-scoreboard players operation @s yrelative -= @e[type=armor_stand,tag=thisone] y
-scoreboard players operation @s zrelative -= @e[type=armor_stand,tag=thisone] z
-
-function gravity_sim:acceleration
+execute if entity @s[scores={mass=0..50}] run function game:masscalcs
