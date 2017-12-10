@@ -10,5 +10,5 @@ execute @s[tag=size100] ~ ~ ~ summon falling_block ~ ~ ~ {NoGravity:1,Time:1,Tag
 execute @s[tag=size500] ~ ~ ~ summon falling_block ~ ~ ~ {NoGravity:1,Time:1,Tags:[new,size500],Glowing:1,BlockState:{Name:"stone",Properties:{state:"7"}}}
 
 kill @s
-
+#hi
 execute @e[type=falling_block,tag=new] ~ ~ ~ function game:setscore
