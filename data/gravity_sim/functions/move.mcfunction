@@ -1,3 +1,5 @@
+data merge entity @s {Time:1}
+
 execute if score @s xvelocity > 200000000 number run scoreboard players set @s xvelocity 200000000
 execute if score @s yvelocity > 200000000 number run scoreboard players set @s yvelocity 200000000
 execute if score @s zvelocity > 200000000 number run scoreboard players set @s zvelocity 200000000

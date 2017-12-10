@@ -1,4 +1,5 @@
 tag @s remove new
+
 scoreboard players set @s[tag=size1] mass 1
 scoreboard players set @s[tag=size2] mass 2
 scoreboard players set @s[tag=size3] mass 3
