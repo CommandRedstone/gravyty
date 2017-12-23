@@ -44,7 +44,6 @@ tag @e[type=armor_stand,distance=..0.5] add Collision
 scoreboard players operation @s collisionxr += @e[type=armor_stand,distance=0.01..0.5] collisionxr
 scoreboard players operation @s collisionyr += @e[type=armor_stand,distance=0.01..0.5] collisionyr
 scoreboard players operation @s collisionzr += @e[type=armor_stand,distance=0.01..0.5] collisionzr
-tellraw @a [{"text":"\n"},{"text":"x: "},{"score":{"name":"@s","objective":"collisionxr"}},{"text":" y: "},{"score":{"name":"@s","objective":"collisionyr"}},{"text":" z: "},{"score":{"name":"@s","objective":"collisionzr"}},{"text":" mass: "},{"score":{"name":"@s","objective":"collisionmass"}}]
 scoreboard players operation @s collisionxr /= @s collisionmass
 scoreboard players operation @s collisionyr /= @s collisionmass
 scoreboard players operation @s collisionzr /= @s collisionmass
