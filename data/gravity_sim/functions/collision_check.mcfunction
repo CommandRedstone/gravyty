@@ -1,0 +1,1 @@
+execute if entity @e[type=armor_stand,distance=0.01..0.5,limit=1] run tag @s add Collision
