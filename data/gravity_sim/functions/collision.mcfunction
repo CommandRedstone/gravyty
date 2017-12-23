@@ -58,7 +58,6 @@ scoreboard players operation @e[type=armor_stand,tag=CollisionP,limit=1] zveloci
 scoreboard players operation @e[type=armor_stand,tag=CollisionP,limit=1] xvelocity *= 1000 number
 scoreboard players operation @e[type=armor_stand,tag=CollisionP,limit=1] yvelocity *= 1000 number
 scoreboard players operation @e[type=armor_stand,tag=CollisionP,limit=1] zvelocity *= 1000 number
-tellraw @a [{"text":"\n"},{"text":"x: "},{"score":{"name":"@s","objective":"collisionxr"}},{"text":" y: "},{"score":{"name":"@s","objective":"collisionyr"}},{"text":" z: "},{"score":{"name":"@s","objective":"collisionzr"}},{"text":" mass: "},{"score":{"name":"@s","objective":"collisionmass"}}]
 execute store result entity @e[type=armor_stand,limit=1,tag=CollisionP] Pos[0] double 0.001 run scoreboard players get @s collisionxr
 execute store result entity @e[type=armor_stand,limit=1,tag=CollisionP] Pos[1] double 0.001 run scoreboard players get @s collisionyr
 execute store result entity @e[type=armor_stand,limit=1,tag=CollisionP] Pos[2] double 0.001 run scoreboard players get @s collisionzr
